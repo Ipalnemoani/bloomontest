@@ -4,6 +4,7 @@ import re
 import random
 import string
 
+
 from collections import Counter
 
 
@@ -37,7 +38,6 @@ class Warehouse(object):
         with open(fname) as arrive_file:
             text = arrive_file.readlines()
         return text
-
 
 
 class FacilityStock():
@@ -244,8 +244,6 @@ def main():
                     stock.update_stock(bqt.bd_size, new_stock)
 
                     print(f"{bouquet}")
-                else:
-                    continue
 
 
 if __name__ == '__main__':
